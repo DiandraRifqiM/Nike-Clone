@@ -5,6 +5,11 @@ const nextConfig = {
 
 module.exports = {
   images: {
-    domains: ["static.nike.com", "thumbs.gfycat.com"],
+    domains: [
+      "static.nike.com",
+      "thumbs.gfycat.com",
+      "i.redd.it",
+      "cdnwpedutorenews.gramedia.net",
+    ],
   },
 };

@@ -2,6 +2,8 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 // import { Inter } from "next/font/google";
+// import React, { useState, useEffect } from "react";
+
 import "boxicons";
 
 // const inter = Inter({ subsets: ["latin"] });
@@ -72,7 +74,7 @@ export default function Home() {
             </div>
             <div className="search-etc flex gap-6 ">
               <div className="search-input div flex ">
-                <box-icon name="search" size="md"></box-icon>
+                <box-icon name="search" size="sm"></box-icon>
                 <input
                   type="text"
                   placeholder="Search"
@@ -80,19 +82,19 @@ export default function Home() {
                 />
               </div>
               <div className="heart">
-                <box-icon size="md" name="heart">
+                <box-icon size="sm" name="heart">
                   <a href="http://"></a>
                 </box-icon>
               </div>
               <div className="whistlist">
-                <box-icon size="md" name="cart">
+                <box-icon size="sm" name="cart">
                   <a href="http://"></a>
                 </box-icon>
               </div>
             </div>
           </div>
           {/* Left */}
-          <div className="left-nav cursor-pointer">
+          <div className="left-nav cursor-pointer ml-8">
             <svg viewBox="0 0 20 20" role="img" width="12vh" height="12vh">
               <path
                 fill="currentColor"
@@ -130,6 +132,7 @@ export default function Home() {
             <h1>NIKE AIR</h1>
             <h1>MAX PULSE</h1>
           </div>
+          {/* Text 2 */}
           <div className="text text-center mt-4">
             <h1>
               Inspired by the energy of London's music scene comes the AIR MAX
@@ -138,6 +141,7 @@ export default function Home() {
               Pulse. A tough silhouette infused with an unreal sensation of Air.
             </h1>
           </div>
+          {/* Button */}
           <div className="button text-center cursor-pointer mt-4">
             <button class="bg-black text-white text-base font-semibold py-2 px-5 rounded-full">
               Shop Now
@@ -149,36 +153,89 @@ export default function Home() {
           {/* text */}
           <div className="weekly-text">Trending This Week</div>
           {/* shoes */}
-          <div className="weekly-Shoes mt-4 flex gap-4 cursor-pointer">
-            <div className="Shoes1 w-max ">
-              <Image
-                src="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_1.5/w_383,c_limit/4f37fca8-6bce-43e7-ad07-f57ae3c13142/air-force-1-07-shoes-WrLlWX.png"
-                width="400"
-                height="400"
-              />
-              <h1 className="text-base float-right"> Rp 1,549,000</h1>
-              <h1 className="text-base">Nike Air Force 1 '07</h1>
-              <h1 className="text-base text-neutral-400">Men's Shoes</h1>
+          <div className="weekly-Shoes mt-4  cursor-pointer">
+            <div className="first-section flex gap-4">
+              <div className="Shoes1 w-max ">
+                <Image
+                  src="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_1.5/w_383,c_limit/4f37fca8-6bce-43e7-ad07-f57ae3c13142/air-force-1-07-shoes-WrLlWX.png"
+                  width="400"
+                  height="400"
+                />
+                <h1 className="text-base float-right"> Rp 1,549,000</h1>
+                <h1 className="text-base">Nike Air Force 1 '07</h1>
+                <h1 className="text-base text-neutral-400">Men's Shoes</h1>
+              </div>
+              <div className="Shoes2 w-max ">
+                <Image
+                  src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/5927b4c8-6f28-4334-a174-20edb76c3c29/air-jordan-1-retro-high-og-shoes-Pz6fZ9.png"
+                  width="400"
+                  height="400"
+                />
+                <h1 className="text-base float-right"> Rp 2,850,000</h1>
+                <h1 className="text-base">Air Jordan 1 Retro High OG</h1>
+                <h1 className="text-base text-neutral-400">Men's Shoes</h1>
+              </div>
+              <div className="Shoes3 w-max ">
+                <Image
+                  src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/97029bbe-ccc1-4ad0-b51e-eff86332418d/air-jordan-1-zoom-cmft-2-shoes-nX8Qqx.png"
+                  width="400"
+                  height="400"
+                />
+                <h1 className="text-base float-right"> Rp 2,250,000</h1>
+                <h1 className="text-base">Air Jordan 1 ZOOM CMFT 2</h1>
+                <h1 className="text-base text-neutral-400">Men's Shoes</h1>
+              </div>
             </div>
-            <div className="Shoes2 w-max ">
-              <Image
-                src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/5927b4c8-6f28-4334-a174-20edb76c3c29/air-jordan-1-retro-high-og-shoes-Pz6fZ9.png"
-                width="400"
-                height="400"
-              />
-              <h1 className="text-base float-right"> Rp 2,850,000</h1>
-              <h1 className="text-base">Air Jordan 1 Retro High OG</h1>
-              <h1 className="text-base text-neutral-400">Men's Shoes</h1>
+            <div className="second-section flex gap-4">
+              <div className="Shoes1 w-max ">
+                <Image
+                  src="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_1.5/w_383,c_limit/4f37fca8-6bce-43e7-ad07-f57ae3c13142/air-force-1-07-shoes-WrLlWX.png"
+                  width="400"
+                  height="400"
+                />
+                <h1 className="text-base float-right"> Rp 1,549,000</h1>
+                <h1 className="text-base">Nike Air Force 1 '07</h1>
+                <h1 className="text-base text-neutral-400">Men's Shoes</h1>
+              </div>
+              <div className="Shoes2 w-max ">
+                <Image
+                  src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/5927b4c8-6f28-4334-a174-20edb76c3c29/air-jordan-1-retro-high-og-shoes-Pz6fZ9.png"
+                  width="400"
+                  height="400"
+                />
+                <h1 className="text-base float-right"> Rp 2,850,000</h1>
+                <h1 className="text-base">Air Jordan 1 Retro High OG</h1>
+                <h1 className="text-base text-neutral-400">Men's Shoes</h1>
+              </div>
+              <div className="Shoes3 w-max ">
+                <Image
+                  src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/97029bbe-ccc1-4ad0-b51e-eff86332418d/air-jordan-1-zoom-cmft-2-shoes-nX8Qqx.png"
+                  width="400"
+                  height="400"
+                />
+                <h1 className="text-base float-right"> Rp 2,250,000</h1>
+                <h1 className="text-base">Air Jordan 1 ZOOM CMFT 2</h1>
+                <h1 className="text-base text-neutral-400">Men's Shoes</h1>
+              </div>
             </div>
-            <div className="Shoes3 w-max ">
+          </div>
+        </div>
+        {/* latest Product */}
+        <div className="latest">
+          <h1 className="text-2xl mt-28 mx-12">The Latest</h1>
+          <div className="latest-content mx-12 mt-8">
+            <div className="Bg-Img relative">
               <Image
-                src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/97029bbe-ccc1-4ad0-b51e-eff86332418d/air-jordan-1-zoom-cmft-2-shoes-nX8Qqx.png"
-                width="400"
-                height="400"
+                src="https://i.redd.it/5fx0o7u7keu71.jpg"
+                width="600"
+                height="600"
               />
-              <h1 className="text-base float-right"> Rp 2,250,000</h1>
-              <h1 className="text-base">Air Jordan 1 ZOOM CMFT 2</h1>
-              <h1 className="text-base text-neutral-400">Men's Shoes</h1>
+              <div className=" bg-button absolute bottom-11 mx-20">
+                <h1 className="text text-3xl text-white">Hello</h1>
+                <button class="bg-white text-black text-lg hover:bg-neutral-200 active:bg-neutral-200 focus:outline-none focus:ring focus:bg-neutral-200 font-semibold mt-4 py-3 px-6 rounded-full ">
+                  Check Now
+                </button>
+              </div>
             </div>
           </div>
         </div>
