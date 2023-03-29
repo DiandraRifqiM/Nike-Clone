@@ -10,6 +10,8 @@ module.exports = {
       "thumbs.gfycat.com",
       "i.redd.it",
       "cdnwpedutorenews.gramedia.net",
+      "secure-images.nike.com",
+      "static1.squarespace.com",
     ],
   },
 };

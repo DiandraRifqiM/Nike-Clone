@@ -119,7 +119,7 @@ export default function Home() {
       <div className="content ">
         {/* Video */}
         <div className="video flex justify-center ">
-          <Image src="/../public/airMax.gif" width="1180" height="500" />
+          <Image src="/../public/airMax.gif" width="1180" height="500" alt="" />
         </div>
         {/* Slogan-Text-Button*/}
         <div className="slogan-text-Button p-5">
@@ -149,7 +149,7 @@ export default function Home() {
           </div>
         </div>
         {/*Weekly Trending Content*/}
-        <div className="Weekly-Trending-Content  text-2xl mx-12">
+        <div className="Weekly-Trending-Content  text-2xl mx-16">
           {/* text */}
           <div className="weekly-text">Trending This Week</div>
           {/* shoes */}
@@ -160,6 +160,7 @@ export default function Home() {
                   src="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_1.5/w_383,c_limit/4f37fca8-6bce-43e7-ad07-f57ae3c13142/air-force-1-07-shoes-WrLlWX.png"
                   width="400"
                   height="400"
+                  alt=""
                 />
                 <h1 className="text-base float-right"> Rp 1,549,000</h1>
                 <h1 className="text-base">Nike Air Force 1 '07</h1>
@@ -170,6 +171,7 @@ export default function Home() {
                   src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/5927b4c8-6f28-4334-a174-20edb76c3c29/air-jordan-1-retro-high-og-shoes-Pz6fZ9.png"
                   width="400"
                   height="400"
+                  alt=""
                 />
                 <h1 className="text-base float-right"> Rp 2,850,000</h1>
                 <h1 className="text-base">Air Jordan 1 Retro High OG</h1>
@@ -180,6 +182,7 @@ export default function Home() {
                   src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/97029bbe-ccc1-4ad0-b51e-eff86332418d/air-jordan-1-zoom-cmft-2-shoes-nX8Qqx.png"
                   width="400"
                   height="400"
+                  alt=""
                 />
                 <h1 className="text-base float-right"> Rp 2,250,000</h1>
                 <h1 className="text-base">Air Jordan 1 ZOOM CMFT 2</h1>
@@ -189,32 +192,39 @@ export default function Home() {
             <div className="second-section flex gap-4">
               <div className="Shoes1 w-max ">
                 <Image
-                  src="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_1.5/w_383,c_limit/4f37fca8-6bce-43e7-ad07-f57ae3c13142/air-force-1-07-shoes-WrLlWX.png"
+                  src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/06cc2fd7-08e2-4df2-a88b-9862ca923510/air-jordan-11-retro-shoes-gMjfzz.png"
                   width="400"
                   height="400"
+                  alt=""
                 />
-                <h1 className="text-base float-right"> Rp 1,549,000</h1>
-                <h1 className="text-base">Nike Air Force 1 '07</h1>
+                <h1 className="text-base float-right"> Rp 3,319,000</h1>
+                <h1 className="text-base text-amber-700">Most Favourite</h1>
+                <h1 className="text-base">Air Jordan 11 Retro</h1>
                 <h1 className="text-base text-neutral-400">Men's Shoes</h1>
               </div>
               <div className="Shoes2 w-max ">
                 <Image
-                  src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/5927b4c8-6f28-4334-a174-20edb76c3c29/air-jordan-1-retro-high-og-shoes-Pz6fZ9.png"
+                  src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/6ce6980d-60d0-478f-adf3-106c7bacced9/air-max-tw-se-shoes-8CTsWh.png"
                   width="400"
                   height="400"
+                  alt=""
                 />
-                <h1 className="text-base float-right"> Rp 2,850,000</h1>
-                <h1 className="text-base">Air Jordan 1 Retro High OG</h1>
+                <h1 className="text-base float-right"> Rp 2,669,000</h1>
+                <h1 className="text-base text-amber-700">
+                  Sustainable Materials
+                </h1>
+                <h1 className="text-base">Nike Air Max TW SE</h1>
                 <h1 className="text-base text-neutral-400">Men's Shoes</h1>
               </div>
               <div className="Shoes3 w-max ">
                 <Image
-                  src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/97029bbe-ccc1-4ad0-b51e-eff86332418d/air-jordan-1-zoom-cmft-2-shoes-nX8Qqx.png"
+                  src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/f16f67b2-9ac5-42ef-a539-d9df8ce3ffd7/air-max-97-se-shoes-Q9Jrdn.png"
                   width="400"
                   height="400"
+                  alt=""
                 />
                 <h1 className="text-base float-right"> Rp 2,250,000</h1>
-                <h1 className="text-base">Air Jordan 1 ZOOM CMFT 2</h1>
+                <h1 className="text-base">Nike Air Max 97 SE</h1>
                 <h1 className="text-base text-neutral-400">Men's Shoes</h1>
               </div>
             </div>
@@ -222,16 +232,35 @@ export default function Home() {
         </div>
         {/* latest Product */}
         <div className="latest">
-          <h1 className="text-2xl mt-28 mx-12">The Latest</h1>
-          <div className="latest-content mx-12 mt-8">
-            <div className="Bg-Img relative">
+          <h1 className="text-2xl mt-28 mx-16">The Latest</h1>
+          <div className="first-latest-content flex mx-16 mt-8 gap-16">
+            {/* First Latest */}
+            <div className="first-Bg-Img relative">
               <Image
                 src="https://i.redd.it/5fx0o7u7keu71.jpg"
                 width="600"
                 height="600"
+                alt=""
               />
-              <div className=" bg-button absolute bottom-11 mx-20">
-                <h1 className="text text-3xl text-white">Hello</h1>
+              <div className=" first-bg-button absolute bottom-14 mx-20 cursor-pointer">
+                <h1 className="text text-4xl text-white">Get High By Shoes</h1>
+                <button class="bg-white text-black text-lg hover:bg-neutral-200 active:bg-neutral-200 focus:outline-none focus:ring focus:bg-neutral-200 font-semibold mt-4 py-3 px-6 rounded-full ">
+                  Check Now
+                </button>
+              </div>
+            </div>
+            {/* Second Latest */}
+            <div className="second-bg-img relative ">
+              <Image
+                src="http://static1.squarespace.com/static/54f4d1aae4b0014ec19ff956/54f62013e4b0589068219afa/5cebbf7115fcc0da6494dc41/1558954039294/air-jordan-1-la-to-chicago-release-date.gif?format=1500w"
+                width="575"
+                height="575"
+                alt=""
+              />
+              <div className=" first-bg-button absolute bottom-14 mx-20 cursor-pointer">
+                <h1 className="text text-4xl text-white">
+                  Shoes That Can Make 9/11
+                </h1>
                 <button class="bg-white text-black text-lg hover:bg-neutral-200 active:bg-neutral-200 focus:outline-none focus:ring focus:bg-neutral-200 font-semibold mt-4 py-3 px-6 rounded-full ">
                   Check Now
                 </button>
