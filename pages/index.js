@@ -135,7 +135,8 @@ export default function Home() {
           {/* Text 2 */}
           <div className="text text-center mt-4">
             <h1>
-              Inspired by the energy of London's music scene comes the AIR MAX
+              Inspired by the energy of London{"'"}s music scene comes the AIR
+              MAX
             </h1>
             <h1>
               Pulse. A tough silhouette infused with an unreal sensation of Air.
@@ -163,8 +164,8 @@ export default function Home() {
                   alt=""
                 />
                 <h1 className="text-base float-right"> Rp 1,549,000</h1>
-                <h1 className="text-base">Nike Air Force 1 '07</h1>
-                <h1 className="text-base text-neutral-400">Men's Shoes</h1>
+                <h1 className="text-base">Nike Air Force 1 {"'"}07</h1>
+                <h1 className="text-base text-neutral-400">Men{"'"}s Shoes</h1>
               </div>
               <div className="Shoes2 w-max ">
                 <Image
@@ -175,7 +176,7 @@ export default function Home() {
                 />
                 <h1 className="text-base float-right"> Rp 2,850,000</h1>
                 <h1 className="text-base">Air Jordan 1 Retro High OG</h1>
-                <h1 className="text-base text-neutral-400">Men's Shoes</h1>
+                <h1 className="text-base text-neutral-400">Men{"'"}s Shoes</h1>
               </div>
               <div className="Shoes3 w-max ">
                 <Image
@@ -186,7 +187,7 @@ export default function Home() {
                 />
                 <h1 className="text-base float-right"> Rp 2,250,000</h1>
                 <h1 className="text-base">Air Jordan 1 ZOOM CMFT 2</h1>
-                <h1 className="text-base text-neutral-400">Men's Shoes</h1>
+                <h1 className="text-base text-neutral-400">Men{"'"}s Shoes</h1>
               </div>
             </div>
             <div className="second-section flex gap-4">
@@ -200,7 +201,7 @@ export default function Home() {
                 <h1 className="text-base float-right"> Rp 3,319,000</h1>
                 <h1 className="text-base text-amber-700">Most Favourite</h1>
                 <h1 className="text-base">Air Jordan 11 Retro</h1>
-                <h1 className="text-base text-neutral-400">Men's Shoes</h1>
+                <h1 className="text-base text-neutral-400">Men{"'"}s Shoes</h1>
               </div>
               <div className="Shoes2 w-max ">
                 <Image
@@ -214,7 +215,7 @@ export default function Home() {
                   Sustainable Materials
                 </h1>
                 <h1 className="text-base">Nike Air Max TW SE</h1>
-                <h1 className="text-base text-neutral-400">Men's Shoes</h1>
+                <h1 className="text-base text-neutral-400">Men{"'"}s Shoes</h1>
               </div>
               <div className="Shoes3 w-max ">
                 <Image
@@ -225,7 +226,7 @@ export default function Home() {
                 />
                 <h1 className="text-base float-right"> Rp 2,250,000</h1>
                 <h1 className="text-base">Nike Air Max 97 SE</h1>
-                <h1 className="text-base text-neutral-400">Men's Shoes</h1>
+                <h1 className="text-base text-neutral-400">Men{"'"}s Shoes</h1>
               </div>
             </div>
           </div>
