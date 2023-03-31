@@ -75,7 +75,7 @@ export default function Home() {
             </div>
             <div className="search-etc flex gap-6 ">
               <div className="search-input div relative ">
-                <BiSearch size="4vh" className="absolute mt-1" />
+                <BiSearch size="25" className="absolute mt-1" />
                 <input
                   type="text"
                   placeholder="Search"
@@ -83,16 +83,16 @@ export default function Home() {
                 />
               </div>
               <div className="heart">
-                <BiHeart size="4vh" />
+                <BiHeart size="25" />
               </div>
               <div className="whistlist">
-                <BiShoppingBag size="4vh" />
+                <BiShoppingBag size="25" />
               </div>
             </div>
           </div>
           {/* Left */}
           <div className="left-nav cursor-pointer ml-8">
-            <svg viewBox="0 0 20 20" role="img" width="12vh" height="12vh">
+            <svg viewBox="0 0 20 20" role="img" width="75" height="75">
               <path
                 fill="currentColor"
                 fill-rule="evenodd"
