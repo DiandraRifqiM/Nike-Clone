@@ -119,7 +119,7 @@ export default function Home() {
           <a href="https://www.nike.com/id/w/air-max-a6d8h">
             <Image
               className="cursor-pointer"
-              src="/../public/airMax.gif"
+              src="/airMax.gif"
               width="1180"
               height="500"
               alt=""
