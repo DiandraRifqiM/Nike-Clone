@@ -3,8 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 // import { Inter } from "next/font/google";
 // import React, { useState, useEffect } from "react";
-
-import "boxicons";
+import { BiShoppingBag } from "react-icons/bi";
+import { BiHeart } from "react-icons/bi";
+import { BiSearch } from "react-icons/bi";
 
 // const inter = Inter({ subsets: ["latin"] });
 
@@ -74,22 +75,18 @@ export default function Home() {
             </div>
             <div className="search-etc flex gap-6 ">
               <div className="search-input div flex ">
-                <box-icon name="search" size="sm"></box-icon>
+                <BiSearch size="4vh" />
                 <input
                   type="text"
                   placeholder="Search"
-                  className="outline-none border rounded-3xl bg-neutral-200 cursor-pointer"
+                  className="outline-none border rounded-3xl bg-neutral-200 cursor-pointer text-justify text-xl"
                 />
               </div>
               <div className="heart">
-                <box-icon size="sm" name="heart">
-                  <a href="http://"></a>
-                </box-icon>
+                <BiHeart size="4vh" />
               </div>
               <div className="whistlist">
-                <box-icon size="sm" name="cart">
-                  <a href="http://"></a>
-                </box-icon>
+                <BiShoppingBag size="4vh" />
               </div>
             </div>
           </div>
@@ -119,7 +116,15 @@ export default function Home() {
       <div className="content ">
         {/* Video */}
         <div className="video flex justify-center ">
-          <Image src="/../public/airMax.gif" width="1180" height="500" alt="" />
+          <a href="https://www.nike.com/id/w/air-max-a6d8h">
+            <Image
+              className="cursor-pointer"
+              src="/../public/airMax.gif"
+              width="1180"
+              height="500"
+              alt=""
+            />
+          </a>
         </div>
         {/* Slogan-Text-Button*/}
         <div className="slogan-text-Button p-5">
@@ -128,7 +133,7 @@ export default function Home() {
             <h1>Just In</h1>
           </div>
           {/* Slogan */}
-          <div className="slogan text-center text-6xl font-black cursor-pointer">
+          <div className="slogan text-center text-6xl font-sans font-[1000] cursor-pointer">
             <h1>NIKE AIR</h1>
             <h1>MAX PULSE</h1>
           </div>
@@ -150,7 +155,7 @@ export default function Home() {
           </div>
         </div>
         {/*Weekly Trending Content*/}
-        <div className="Weekly-Trending-Content  text-2xl mx-16">
+        <div className="Weekly-Trending-Content  text-3xl mx-16">
           {/* text */}
           <div className="weekly-text">Trending This Week</div>
           {/* shoes */}
@@ -233,7 +238,8 @@ export default function Home() {
         </div>
         {/* latest Product */}
         <div className="latest">
-          <h1 className="text-2xl mt-28 mx-16">The Latest</h1>
+          <h1 className="text-3xl mt-28 mx-16">The Latest</h1>
+          {/* Latest Content */}
           <div className="first-latest-content flex mx-16 mt-8 gap-16">
             {/* First Latest */}
             <div className="first-Bg-Img relative">
@@ -262,8 +268,84 @@ export default function Home() {
                 <h1 className="text text-4xl text-white">
                   Shoes That Can Make 9/11
                 </h1>
+                {/* Button */}
                 <button class="bg-white text-black text-lg hover:bg-neutral-200 active:bg-neutral-200 focus:outline-none focus:ring focus:bg-neutral-200 font-semibold mt-4 py-3 px-6 rounded-full ">
                   Check Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* Featured */}
+        <div className="featured ">
+          <h1 className="text-3xl mt-24 mx-16">Featured</h1>
+          <div className="Featured-img mt-8 mx-16">
+            <Image
+              src="https://static.nike.com/a/images/f_auto/dpr_1.5,cs_srgb/w_1167,c_limit/b5a680e2-c60c-47be-8766-900cd11cc8f4/nike-just-do-it.jpg"
+              width="1240"
+              height="1240"
+              alt=""
+            />
+          </div>
+          <div className="Featured-slogan-text-button">
+            {/* Slogan */}
+            <div className="Featured-Slogan mt-20 text-center text-7xl font-[1000] font-sans cursor-pointer">
+              <h1>STEP INTO WHAT FEELS GOOD</h1>
+            </div>
+            {/* Text */}
+            <div className="Featured-text">
+              <h1 className="text-lg mt-6 text-center">
+                Cause everyone should know the feeling of running in the perfect
+                air
+              </h1>
+            </div>
+            <div className="Featured-button text-center">
+              <button class="bg-black text-white text-lg hover:bg-neutral-400 active:bg-neutral-400 focus:outline-none focus:ring focus:bg-neutral-400 font-semibold mt-4 py-2 px-4 rounded-full ">
+                Find Your Shoe
+              </button>
+            </div>
+          </div>
+        </div>
+        {/* The Essential */}
+        <div className="Essential">
+          <h1 className="text-3xl mt-24 mx-16">The Essentials</h1>
+          <div className="Essentials-content mt-8 mx-16 gap-4 flex ">
+            <div className="Essentials-content1 relative">
+              <Image
+                src="https://static.nike.com/a/images/f_auto/dpr_1.5,cs_srgb/h_540,c_limit/d94bfa7e-9357-406a-a124-1940712dfa0b/nike-just-do-it.png"
+                alt=""
+                width="450"
+                height="450"
+              />
+              <div className=" first-bg-button absolute bottom-7 mx-16 cursor-pointer">
+                <button class="bg-white text-black text-lg hover:bg-neutral-200 active:bg-neutral-200 focus:outline-none focus:ring focus:bg-neutral-200 font-semibold mt-4 py-2 px-4 rounded-full ">
+                  Men{"'"}s
+                </button>
+              </div>
+            </div>
+            <div className="Essential-content2 relative">
+              <Image
+                src="https://static.nike.com/a/images/f_auto/dpr_1.5,cs_srgb/h_540,c_limit/dc62b322-5c3f-4508-b21c-950683ed460f/nike-just-do-it.png"
+                alt=""
+                width="450"
+                height="450"
+              />
+              <div className=" second-bg-button absolute bottom-7 mx-16 cursor-pointer">
+                <button class="bg-white text-black text-lg hover:bg-neutral-200 active:bg-neutral-200 focus:outline-none focus:ring focus:bg-neutral-200 font-semibold mt-4 py-2 px-4 rounded-full ">
+                  Women{"'"}s
+                </button>
+              </div>
+            </div>
+            <div className="Essential-content3 relative">
+              <Image
+                src="https://static.nike.com/a/images/f_auto/dpr_1.5,cs_srgb/h_540,c_limit/58359474-a0de-4329-959c-55d1652d0912/nike-just-do-it.png"
+                alt=""
+                width="450"
+                height="450"
+              />
+              <div className=" second-bg-button absolute bottom-7 mx-16 cursor-pointer">
+                <button class="bg-white text-black text-lg hover:bg-neutral-200 active:bg-neutral-200 focus:outline-none focus:ring focus:bg-neutral-200 font-semibold mt-4 py-2 px-4 rounded-full ">
+                  Kid{"'"}s
                 </button>
               </div>
             </div>
