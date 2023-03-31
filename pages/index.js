@@ -54,32 +54,32 @@ export default function Home() {
           <div className="Right-nav flex float-right mt-5 gap-20 mr-12 cursor-pointer">
             {/* center Nav */}
             <div className="nav-center flex gap-8 text-base font-medium ">
-              <div className="new">
+              <div className="new hover:underline">
                 <a href="http://">New & Features</a>
               </div>
-              <div className="men">
+              <div className="men hover:underline">
                 <a href="http://">Men</a>
               </div>
-              <div className="women">
+              <div className="women hover:underline">
                 <a href="http://">Women</a>
               </div>
-              <div className="kids">
+              <div className="kids hover:underline">
                 <a href="http://">Kids</a>
               </div>
-              <div className="sale">
+              <div className="sale hover:underline">
                 <a href="http://">Sale</a>
               </div>
-              <div className="snkrs">
+              <div className="snkrs hover:underline">
                 <a href="http://">SNKRS</a>
               </div>
             </div>
             <div className="search-etc flex gap-6 ">
-              <div className="search-input div flex ">
-                <BiSearch size="4vh" />
+              <div className="search-input div relative ">
+                <BiSearch size="4vh" className="absolute mt-1" />
                 <input
                   type="text"
                   placeholder="Search"
-                  className="outline-none border rounded-3xl bg-neutral-200 cursor-pointer text-justify text-xl"
+                  className="w-full pl-6 outline-none border rounded-3xl bg-neutral-200 cursor-pointer text-justify text-xl"
                 />
               </div>
               <div className="heart">
