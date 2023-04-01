@@ -261,13 +261,15 @@ export default function Home() {
             {/* Just In Slogan */}
             <div className="JustIn-Slogan text-center text-7xl font-sans font-[1000] cursor-pointer">
               <h1>AIR JORDAN XXXVII LOW</h1>
-              <h1>'STUNT'</h1>
+              <h1>
+                {"'"}STUNT{"'"}
+              </h1>
             </div>
             {/* Just In Text 2*/}
             <div className="JustIn-text2 text-center text-lg mt-4">
               <h1>
-                The Air Jordan XXXVII Low 'Stunt' colourway tricks out the
-                ultimate performance show to make a bold statement.
+                The Air Jordan XXXVII Low {"'"}Stunt{"'"} colourway tricks out
+                the ultimate performance show to make a bold statement.
               </h1>
             </div>
             {/* Just In Button */}
