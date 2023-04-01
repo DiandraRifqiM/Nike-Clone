@@ -328,8 +328,8 @@ export default function Home() {
           <div className="Featured-img mt-8 mx-16">
             <Image
               src="https://static.nike.com/a/images/f_auto/dpr_1.5,cs_srgb/w_1167,c_limit/b5a680e2-c60c-47be-8766-900cd11cc8f4/nike-just-do-it.jpg"
-              width="1240"
-              height="1240"
+              width="1500"
+              height="1500"
               alt=""
             />
           </div>
