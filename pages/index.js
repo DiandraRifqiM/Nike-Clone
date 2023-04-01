@@ -6,6 +6,10 @@ import Link from "next/link";
 import { BiShoppingBag } from "react-icons/bi";
 import { BiHeart } from "react-icons/bi";
 import { BiSearch } from "react-icons/bi";
+import { BsYoutube } from "react-icons/bs";
+import { BsTwitter } from "react-icons/bs";
+import { BsFacebook } from "react-icons/bs";
+import { BsInstagram } from "react-icons/bs";
 
 // const inter = Inter({ subsets: ["latin"] });
 
@@ -50,7 +54,7 @@ export default function Home() {
         </div>
         {/*Bottom Nav */}
         <div className="Bottom-Nav">
-          {/* Right */}
+          {/* Right nav*/}
           <div className="Right-nav flex float-right mt-5 gap-20 mr-12 cursor-pointer">
             {/* center Nav */}
             <div className="nav-center flex gap-8 text-base font-medium ">
@@ -90,7 +94,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          {/* Left */}
+          {/* Left Nav*/}
           <div className="left-nav cursor-pointer ml-8">
             <svg viewBox="0 0 20 20" role="img" width="75" height="75">
               <path
@@ -120,8 +124,8 @@ export default function Home() {
             <Image
               className="cursor-pointer"
               src="/airMax.gif"
-              width="1180"
-              height="500"
+              height="1280"
+              width="1280"
               alt=""
             />
           </a>
@@ -236,17 +240,57 @@ export default function Home() {
             </div>
           </div>
         </div>
+        {/* Just In */}
+        <div className="JustIn">
+          <h1 className="text-3xl mt-28 mx-16">Just In</h1>
+          {/* Just In Content */}
+          <div className="JustIn-Image mt-8 mx-16">
+            <Image
+              src="https://static.nike.com/a/images/f_auto/dpr_1.5,cs_srgb/w_1167,c_limit/77dbf580-d3e9-4db0-8901-72fab0bcbdba/nike-just-do-it.png"
+              alt=""
+              height="1480"
+              width="1480"
+            />
+          </div>
+          {/* Just In Slogan-Text */}
+          <div className="JustIn-Slogan-Text-Button p-5">
+            {/* Just In Text */}
+            <div className="JustIn-text text-center text-lg ">
+              <h1>Nike App Early Access</h1>
+            </div>
+            {/* Just In Slogan */}
+            <div className="JustIn-Slogan text-center text-7xl font-sans font-[1000] cursor-pointer">
+              <h1>AIR JORDAN XXXVII LOW</h1>
+              <h1>'STUNT'</h1>
+            </div>
+            {/* Just In Text 2*/}
+            <div className="JustIn-text2 text-center text-lg mt-4">
+              <h1>
+                The Air Jordan XXXVII Low 'Stunt' colourway tricks out the
+                ultimate performance show to make a bold statement.
+              </h1>
+            </div>
+            {/* Just In Button */}
+            <div className="JustIn-Button text-center mt-4">
+              <a href="https://www.nike.com/sg/nike-app">
+                <button class="bg-black text-white text-lg hover:bg-neutral-400 active:bg-neutral-400 focus:outline-none focus:ring focus:bg-neutral-400 font-semibold mt-4 py-2 px-6 rounded-full ">
+                  Shop
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
         {/* latest Product */}
         <div className="latest">
-          <h1 className="text-3xl mt-28 mx-16">The Latest</h1>
+          <h1 className="text-3xl mt-24 mx-16">The Latest</h1>
           {/* Latest Content */}
           <div className="first-latest-content flex mx-16 mt-8 gap-16">
             {/* First Latest */}
             <div className="first-Bg-Img relative">
               <Image
                 src="https://i.redd.it/5fx0o7u7keu71.jpg"
-                width="600"
-                height="600"
+                width="700"
+                height="700"
                 alt=""
               />
               <div className=" first-bg-button absolute bottom-14 mx-20 cursor-pointer">
@@ -260,8 +304,8 @@ export default function Home() {
             <div className="second-bg-img relative ">
               <Image
                 src="http://static1.squarespace.com/static/54f4d1aae4b0014ec19ff956/54f62013e4b0589068219afa/5cebbf7115fcc0da6494dc41/1558954039294/air-jordan-1-la-to-chicago-release-date.gif?format=1500w"
-                width="575"
-                height="575"
+                width="675"
+                height="675"
                 alt=""
               />
               <div className=" first-bg-button absolute bottom-14 mx-20 cursor-pointer">
@@ -299,6 +343,7 @@ export default function Home() {
                 air
               </h1>
             </div>
+            {/* Button */}
             <div className="Featured-button text-center">
               <button class="bg-black text-white text-lg hover:bg-neutral-400 active:bg-neutral-400 focus:outline-none focus:ring focus:bg-neutral-400 font-semibold mt-4 py-2 px-4 rounded-full ">
                 Find Your Shoe
@@ -318,7 +363,7 @@ export default function Home() {
                 height="450"
               />
               <div className=" first-bg-button absolute bottom-7 mx-16 cursor-pointer">
-                <button class="bg-white text-black text-lg hover:bg-neutral-200 active:bg-neutral-200 focus:outline-none focus:ring focus:bg-neutral-200 font-semibold mt-4 py-2 px-4 rounded-full ">
+                <button class="bg-white text-black text-lg hover:bg-neutral-200 active:bg-neutral-200 focus:outline-none focus:ring focus:bg-neutral-200 mt-4 py-2 px-4 rounded-full ">
                   Men{"'"}s
                 </button>
               </div>
@@ -331,7 +376,7 @@ export default function Home() {
                 height="450"
               />
               <div className=" second-bg-button absolute bottom-7 mx-16 cursor-pointer">
-                <button class="bg-white text-black text-lg hover:bg-neutral-200 active:bg-neutral-200 focus:outline-none focus:ring focus:bg-neutral-200 font-semibold mt-4 py-2 px-4 rounded-full ">
+                <button class="bg-white text-black text-lg hover:bg-neutral-200 active:bg-neutral-200 focus:outline-none focus:ring focus:bg-neutral-200  mt-4 py-2 px-4 rounded-full ">
                   Women{"'"}s
                 </button>
               </div>
@@ -344,9 +389,73 @@ export default function Home() {
                 height="450"
               />
               <div className=" second-bg-button absolute bottom-7 mx-16 cursor-pointer">
-                <button class="bg-white text-black text-lg hover:bg-neutral-200 active:bg-neutral-200 focus:outline-none focus:ring focus:bg-neutral-200 font-semibold mt-4 py-2 px-4 rounded-full ">
+                <button class="bg-white text-black text-lg hover:bg-neutral-200 active:bg-neutral-200 focus:outline-none focus:ring focus:bg-neutral-200  mt-4 py-2 px-4 rounded-full ">
                   Kid{"'"}s
                 </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="Footer p-8 mt-16 bg-black/95">
+          <div className="right-footer flex float-right cursor-pointer text-gray-500 mt-6  gap-7">
+            {/* Twitter */}
+            <BsTwitter className="hover:text-white" size="25" />
+            {/* FaceBook*/}
+            <BsFacebook className="hover:text-white" size="25" />
+            {/* YouTube */}
+            <BsYoutube className="hover:text-white" size="25" />
+            {/* Instagram */}
+            <BsInstagram className="hover:text-white" size="25" />
+          </div>
+          <div className="left-footer text-white text-sm font-semibold font-sans mt-6 gap-32 flex ">
+            <div className="First-Section-Footer">
+              <h1>FIND A STORE</h1>
+              <br />
+              <h1>BECOME A MEMBER</h1>
+              <br />
+              <h1>SIGN UP FOR EMAIL</h1>
+              <br />
+              <h1>STUDENT DISCOUNTS</h1>
+              <br />
+              <h1>Send Us Feedback</h1>
+            </div>
+            <div className="Second-Section-Footer">
+              <h1>GET HELP</h1>
+              <br />
+              <div className="section-hover">
+                <h1 className=" text-gray-400 font-thin hover:text-white">
+                  Order Status
+                </h1>
+                <h1 className=" text-gray-400 font-thin hover:text-white mt-3">
+                  Delivery
+                </h1>
+                <h1 className=" text-gray-400 font-thin hover:text-white mt-3">
+                  Return
+                </h1>
+                <h1 className=" text-gray-400 font-thin hover:text-white mt-3">
+                  Payments Options
+                </h1>
+                <h1 className=" text-gray-400 font-thin hover:text-white mt-3">
+                  Contact Us
+                </h1>
+              </div>
+            </div>
+            <div className="Third-Section-Footer">
+              <h1>ABOUT NIKE</h1>
+              <br />
+              <div className="section-hover">
+                <h1 className=" text-gray-400 font-thin hover:text-white">
+                  News
+                </h1>
+                <h1 className=" text-gray-400 font-thin hover:text-white mt-3">
+                  Careers
+                </h1>
+                <h1 className=" text-gray-400 font-thin hover:text-white mt-3">
+                  Investor
+                </h1>
+                <h1 className=" text-gray-400 font-thin hover:text-white mt-3">
+                  Sustainability
+                </h1>
               </div>
             </div>
           </div>
